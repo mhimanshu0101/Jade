@@ -9,3 +9,11 @@ venv/
 .idea/
 env/
 build/
+
+#media
+.env
+
+# others repo
+octarine
+backend
+db.sqlite3
