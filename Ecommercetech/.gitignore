@@ -13,7 +13,5 @@ build/
 #media
 .env
 
-# others repo
-octarine
-backend
+# others
 db.sqlite3
