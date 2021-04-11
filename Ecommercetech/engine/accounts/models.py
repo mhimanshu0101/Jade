@@ -4,6 +4,7 @@ from django.db import models
 from django.core.management.utils import get_random_secret_key
 
 from engine.utils import timezone
+from .managers import UserManager
 
 # Create your models here.
 class UserType:
@@ -30,6 +31,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     token_secret_key = models.CharField(max_length=128, default=get_random_secret_key, unique=True)
     referral_code = models.CharField(max_length=32, blank=True, null=True)
     USERNAME_FIELD = 'email'
+
+    objects = UserManager()
 
     # class Meta:
     #     verbose_name_plural = 'Users'
