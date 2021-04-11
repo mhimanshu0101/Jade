@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include, url
+admin.site.site_header = 'Ecommerce Administration'
+admin.site.site_title  = 'Ecommerce Administration'
+admin.site.index_title = 'Ecommerce Administration'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
+    url(r'^history/', include('engine.history.urls'))
+    
 ]
+
+
