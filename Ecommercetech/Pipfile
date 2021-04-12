@@ -1,0 +1,43 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+"autopep8" = "*"
+ipdb = "*"
+ipython = "*"
+isort = "*"
+pylint = "*"
+
+[packages]
+"boto3" = "*"
+"flake8" = "*"
+"psycopg2-binary" = "*"
+"xhtml2pdf" = "*"
+celery = "==4.2"
+Django = "==1.11.*"
+django-easysettings = "*"
+django-storages = "*"
+django-widget-tweaks = "==1.4.2"
+djangorestframework = "==3.7.*"
+gunicorn = "*"
+Pillow = "==5.0.0"
+PyJWT = "*"
+python-dateutil = "==2.6.1"
+razorpay = "*"
+requests = "*"
+paramiko = "*"
+xlwt = "*"
+xlrd = "*"
+#glue = {ref = "production",git = "ssh://git@phab.renewbuy.com/source/glue.git"}
+neuron = {ref= "development", git="https://github.com/mhimanshu0101/neuron.git"}
+#ams-sdk = {ref = "production",git = "ssh://git@phab.renewbuy.com/diffusion/AS/ams-sdk.git"}
+pandas = "*"
+python-decouple = "*"
+pycurl = "*"
+django-simple-history = "*"
+django-datatables-view = "*"
+
+[requires]
+#python_version = "3.6"

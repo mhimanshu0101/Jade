@@ -42,7 +42,9 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
 ]
-LIBS = []
+LIBS = [
+    'neuron'
+]
 APPS=[
     'engine.accounts',
     'engine.base',
@@ -53,7 +55,9 @@ APPS=[
     'engine.utils',
     'engine.history'
 ]
-EXTRA_LIBS = []
+EXTRA_LIBS = [
+    'rest_framework'
+]
 
 INSTALLED_APPS = DJANGO_APPS + LIBS + APPS + EXTRA_LIBS
 
